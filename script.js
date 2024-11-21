@@ -2,7 +2,7 @@ document.getElementById("applicationForm").addEventListener("submit", function (
     event.preventDefault();
 
     // Play the audio file
-    const audio = new Audio("c:/Users/Windows/Downloads/imagine if ninja had a low taper fade.mp3");
+    const audio = new Audio("https://drive.google.com/file/d/1hPwMKidfZP7DEbxrDXTqWiyrHW27TSXc/view");
     audio.play();
 
     // Redirect to thank-you page after the audio finishes playing
