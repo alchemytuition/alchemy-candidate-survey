@@ -1,0 +1,245 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background: #3f3d3d; /* Dark gray */
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+/* Introduction */
+main .intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .intro h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+main .intro p {
+    font-size: 1.1rem;
+    color: #ebebeb;
+    margin-top: 10px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #ebebeb;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #333;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus, select:focus {
+    border-color: #e07f23;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Radio Button Group */
+.radio-group {
+    margin-top: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Change text color of Yes and No radio button labels */
+.radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 0.95rem;
+    color: #302f2f; /* White text */
+}
+
+/* Styling for radio button inputs */
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Textarea Styling */
+textarea#wwccDetails {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #333;
+    font-size: 0.95rem;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+textarea#wwccDetails:focus {
+    border-color: #e07f23;
+}
+
+/* Instruction Text Styling */
+.form-group p {
+    color: #bbbaba; /* White */
+    font-weight: 600; /* Optional: Makes the text bold for consistency */
+}
+
+/* Instruction Text Box */
+.instruction-text {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.instruction-text p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.instruction-text ol {
+    margin-left: 20px;
+    color: #333;
+}
+
+.instruction-text ol li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+/* Hyperlink Style */
+.instruction-text .link {
+    color: #e07f23; /* Orange */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.instruction-text .link:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e07f23; /* Orange */
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #d6731d;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ebebeb;
+}
+
+footer strong {
+    color: #ffffff;
+}
+
+/* Thank-You Page Styling */
+.thank-you-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.thank-you-image {
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.thank-you-container p {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px 20px;
+    }
+
+    main .intro h1 {
+        font-size: 1.8rem;
+    }
+
+    main .intro p {
+        font-size: 1rem;
+    }
+
+    .submit-button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

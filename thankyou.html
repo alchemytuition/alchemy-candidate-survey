@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Alchemy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="thank-you-container">
+        <!-- Company Logo -->
+        <header>
+            <img src="https://alchemytuition.com.au/wp-content/uploads/2022/03/alchemy300.png" alt="Alchemy Logo" class="logo">
+        </header>
+
+        <!-- Thank You Image -->
+        <img src="https://i.kym-cdn.com/photos/images/original/002/761/269/cec.jpg" alt="Thank You" class="thank-you-image">
+
+        <!-- Message -->
+        <p>Get absolutely fucking sent by your master you good doggy.</p>
+
+        <!-- Audio (muted initially) -->
+        <audio id="submissionAudio" muted>
+            <source src="https://drive.google.com/file/d/1hPwMKidfZP7DEbxrDXTqWiyrHW27TSXc/view" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        // Wait for the page to fully load, then unmute and play the audio
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('submissionAudio');
+            audio.muted = false;  // Unmute the audio
+            audio.play();         // Play the audio
+        });
+    </script>
+</body>
+</html>
+

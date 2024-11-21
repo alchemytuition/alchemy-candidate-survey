@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alchemy | Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://alchemytuition.com.au/wp-content/uploads/2022/03/alchemy300.png" alt="Alchemy Logo" class="logo">
+        </header>
+
+        <main>
+            <div class="intro">
+                <h1>Welcome to Alchemy</h1>
+                <p>Please fill out the survey below to apply for a tutoring position.</p>
+            </div>
+
+            <form id="applicationForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="curriculum">Which Australian Curriculum Did You Follow?</label>
+                    <select id="curriculum" name="curriculum" required>
+                        <option value="">Select one</option>
+                        <option value="WACE">WACE</option>
+                        <option value="SACE">SACE</option>
+                        <option value="VCE">VCE</option>
+                        <option value="HSC">HSC</option>
+                        <option value="QCE">QCE</option>
+                        <option value="ACT">ACT</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="academicAchievements">Notable Academic Achievements</label>
+                    <textarea id="academicAchievements" name="academicAchievements" rows="4" placeholder="List your achievements..." required></textarea>
+                </div>
+
+                <!-- Additional Long Answer Questions -->
+                <div class="form-group">
+                    <label for="Availability">Availability</label>
+                    <textarea id="Availability" name="Availability" rows="4" placeholder="Are you available to tutor during after-school hours (3PM to 8PM) on weekdays? Are you also available on weekends? Please specify what days and what corresponding times you are available."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="Technology and Tools">Technology and Tools</label>
+                    <textarea id="Technology and Tools" name="Technology and Tools" rows="4" placeholder="Do you have a reliable internet connection and access to a device suitable for online tutoring sessions? 
+                    "></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="wwcc">Working with Children Check</label>
+                    <p>Do you have a current Working With Children Check (WWCC)?</p>
+                
+                    <!-- Radio Buttons for Yes/No -->
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="wwcc" value="Yes" required> Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="wwcc" value="No" required> No
+                        </label>
+                    </div>
+                
+                    <!-- Textarea for Additional Details -->
+                    <textarea id="wwccDetails" name="wwccDetails" rows="4" placeholder="If yes, provide the WWCC number. If not, please prepare for the interview by following the steps to understand its requirements."></textarea>
+                </div>
+                <!-- Modern Styled Instructions with Hyperlink -->
+<div class="form-group">
+    <label for="wwccInstructions">Instructions for Applying for WWCC</label>
+    <div id="wwccInstructions" class="instruction-text">
+        <p>To apply for a Working with Children Check (WWCC), follow these steps:</p>
+        <ol>
+            <li><a href="https://www.sa.gov.au/topics/rights-and-law/rights-and-responsibilities/screening-checks/screening-wwcc" target="_blank" class="link">Access this link</a>.</li>
+            <li>Click on <strong>Apply for a screening check</strong>.</li>
+            <li>Scroll down and press the green <strong>“Start now”</strong> button.</li>
+            <li>Complete the questions to start an application.</li>
+            <li>Do not start the application until after the interview, as we will need to provide the Reference Number, Proposed Start Date, and Role Description.</li>
+        </ol>
+    </div>
+</div>
+<div class="form-group">
+    <label for="zoomSetup">Interview Set-Up</label>
+    <div id="zoomSetupInstructions" class="instruction-text">
+        <p>Before the interview, you must have Zoom installed on your device. Please follow the instructions below:</p>
+        <p>If you already have Zoom installed, select <strong>Yes</strong>. If not, follow the steps for installation:</p>
+        
+        <p><strong>On a Computer (Windows/Mac):</strong></p>
+        <ol>
+            <li><a href="https://zoom.us/download" target="_blank" class="link">Go to the Zoom Website</a>.</li>
+            <li>Search for "Zoom Download for Windows/Mac" based on your operating system.</li>
+            <li>Click the first link that appears in the search results.</li>
+            <li>Select the appropriate download:
+                <ul>
+                    <li>For Windows, click the <strong>Download (64-bit)</strong> button.</li>
+                    <li>For Mac, select the <strong>Download for Apple Silicon</strong> button.</li>
+                </ul>
+            </li>
+            <li>Once the file is downloaded, open it and follow the on-screen installation instructions.</li>
+            <li>After installation, open Zoom and <strong>Sign In</strong> with your account or <strong>Create an Account</strong> if you don’t have one.</li>
+        </ol>
+
+        <p>Once you have completed these steps, return here and indicate whether you have Zoom installed by selecting the appropriate option below.</p>
+        
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="zoomInstalled" value="Yes" required> Yes, I have Zoom installed.
+            </label>
+            <label>
+                <input type="radio" name="zoomInstalled" value="No" required> No, I need to install Zoom.
+            </label>
+        </div>
+    </div>
+</div>
+        
+
+                <button type="submit" class="submit-button">Submit Form</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>Contact us at <strong>contact@alchemy-tutors.com</strong> or call <strong>+61 488 901 110</strong></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
