@@ -146,6 +146,19 @@ textarea#wwccDetails:focus {
     color: #333;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+/* Specific Styling for Zoom Radio Buttons */
+.zoom-options .radio-group label {
+    color: #333; /* Deep gray for the text */
+    font-weight: 600; /* Bold for better visibility */
+    font-size: 1rem; /* Adjust font size */
+}
+
+/* Optional: Add a border or background for the Zoom group */
+.zoom-options {
+    background-color: #e6e6e6; /* Light gray background for better contrast */
+    padding: 15px;
+    border-radius: 8px;
+}
 
 .instruction-text p {
     margin-bottom: 10px;
@@ -211,7 +224,7 @@ footer strong {
 }
 
 .thank-you-image {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     display: block;
     border-radius: 12px;
