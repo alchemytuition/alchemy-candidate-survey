@@ -148,9 +148,11 @@ textarea#wwccDetails:focus {
 }
 /* Specific Styling for Zoom Radio Buttons */
 .zoom-options .radio-group label {
-    color: #333; /* Deep gray for the text */
-    font-weight: 600; /* Bold for better visibility */
-    font-size: 1rem; /* Adjust font size */
+    /* Increase specificity */
+.zoom-options .radio-group label {
+    color: #333 !important; /* Forces this rule to take precedence */
+    font-weight: 600; /* Optional: Add bold to ensure visibility */
+    font-size: 1rem; /* Optional: Adjust font size */
 }
 
 /* Optional: Add a border or background for the Zoom group */
